@@ -18,6 +18,7 @@ if ($conn->connect_error) {
 
 $sql = "SELECT * FROM messages";
 $result = $conn->query($sql);
+$current_page = basename($_SERVER['PHP_SELF']);
 ?>
 
 <!DOCTYPE html>
@@ -32,12 +33,12 @@ $result = $conn->query($sql);
     <div class="dashboard-container">
         <nav class="sidebar">
             <div class="logo-container">
-                <img src="logo.png" alt="Logo" class="logo">
+                <!-- <img src="logo.png" alt="Logo" class="logo"> -->
+                <div class="logo-text">Rettro</div> 
             </div>
             <ul>
-                <li><a href="messages.php">Messages</a></li>
+                <li class="<?php echo ($current_page == 'messages.php') ? 'active' : ''; ?>"><a href="messages.php">Messages</a></li>
                 <li><a href="portfolio.php">Portfolio</a></li>
-                <li><a href="packages.php">Packages</a></li>
                 <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>

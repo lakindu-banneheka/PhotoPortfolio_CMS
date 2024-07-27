@@ -49,41 +49,49 @@ h1 {
     margin-top: 0;
 }
 
-#about-me img {
+#about img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin: 20px auto;
 }
 
-#my-photography-journey p {
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    margin: 20px;
+    width: calc(33.33% - 20px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-item h2 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
     margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#my-photography-style ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#my-photography-style li {
-    margin-bottom: 10px;
-}
-
-#my-equipment ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#my-equipment li {
-    margin-bottom: 10px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-    clear: both;
-}
+#

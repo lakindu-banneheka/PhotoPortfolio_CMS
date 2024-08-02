@@ -1,34 +1,4 @@
-/* styles.css */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-header nav ul li {
-    margin-right: 20px;
-}
-
-header nav a {
-    color: #fff;
-    text-decoration: none;
-}
 
 main {
     display: flex;
@@ -37,6 +7,17 @@ main {
     padding: 2em;
 }
 
+
+.cover-photo {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cover-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 section {
     background-color: #f7f7f7;
     padding: 2em;
@@ -56,34 +37,31 @@ h1 {
     margin: 20px auto;
 }
 
-#my-photography-journey p {
+#my-story p {
     margin-bottom: 20px;
 }
 
-#my-photography-style ul {
+#my-skills ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#my-photography-style li {
+#my-skills li {
     margin-bottom: 10px;
 }
 
-#my-equipment ul {
+#my-experience ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#my-equipment li {
-    margin-bottom: 10px;
+#my-experience li {
+    margin-bottom: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-    clear: both;
+#my-experience h2 {
+    font-size: 18px;
+    margin-top: 10px;
 }

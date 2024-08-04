@@ -21,7 +21,7 @@ main {
   font-size: 50px;
   font-family: "Playfair Display", serif;
   color: #072366;
-  margin-top: 10px;
+  margin-top: 30px;
   font-weight: bold;
 }
 #container3 {
@@ -53,7 +53,7 @@ p {
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
 }
-ul li {
+.menu li {
   list-style-type: none;
   color: #717081;
   font-weight: bold;
@@ -61,7 +61,6 @@ ul li {
   margin: 10px;
 }
 .book {
-  flex: 10%;
   border: 3px solid black;
   border-radius: 5px;
   width: 100%;

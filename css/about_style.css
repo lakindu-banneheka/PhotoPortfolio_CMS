@@ -19,17 +19,16 @@
 }
 .container2 {
   margin-top: 0px;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: rgb(138, 134, 134);
 }
 .paragraph {
   height: 50vh;
-  max-width: 400px;
-  flex: 1;
+  max-width: 500px;
   flex-wrap: wrap;
   text-align: justify;
   border: 2px solid rgb(255, 255, 255);
@@ -61,9 +60,10 @@
     font-size: 30px;
     left: 10%;
     top: 50%;
+    text-shadow: 2px 2px 5px wheat;
 }
 #equip h1{
-    color: #8fbd5b;
+    color: #5e7dec;
 }
 #equip ul{
   color: whitesmoke;

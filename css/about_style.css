@@ -48,21 +48,25 @@
     width: 100%;
 }
 #equipment2{
-    height: 400px;
+    height: 80%;
     width: 400px;
     position: absolute;
-    bottom: 4px;
-    right: 0px;
+    bottom: 70px;
+    right: 10%;
     border-radius: 15px 0 0;
+    box-shadow: 10px 10px 15px 10px rgb(231, 227, 114,0.7);
 }
 #equip{
     position: absolute;
     font-size: 30px;
-    left: 50%;
-    top: 10%;
+    left: 10%;
+    top: 50%;
 }
 #equip h1{
-    color: #1C280E;
+    color: #8fbd5b;
+}
+#equip ul{
+  color: whitesmoke;
 }
 #view{
     display: flex;

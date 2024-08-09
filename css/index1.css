@@ -111,7 +111,6 @@ button:hover {
 
 /* Gallery Section */
 
-
 #gallery {
     background-color: #ffffff;
     border-top: 1px solid #ddd;
@@ -218,24 +217,6 @@ button:hover {
     background-color: #333;
     color: #fff;
 }
-
-/* .gallery-button button {
-    padding: 12px 28px;
-    border: none;
-    background-color: #ff6347;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.gallery-button button:hover {
-    background-color: #ff4500;
-    transform: translateY(-2px);
-} */
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {

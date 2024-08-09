@@ -1,3 +1,43 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "dashboard_db";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (isset($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['title'], $_POST['message'])) {
+        $name = $conn->real_escape_string($_POST['name']);
+        $email = $conn->real_escape_string($_POST['email']);
+        $phone = $conn->real_escape_string($_POST['phone']);
+        $title = $conn->real_escape_string($_POST['title']);
+        $message_content = $conn->real_escape_string($_POST['message']);
+        
+        $sql = "INSERT INTO messages (name, email, phone, title, message) VALUES ('$name', '$email', '$phone', '$title', '$message_content')";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "<script>alert('Message sent successfully!');</script>";
+            
+            // Optionally redirect or clear the form fields after showing the alert
+            echo "<script>window.location.href='" . $_SERVER['PHP_SELF'] . "';</script>";
+        } else {
+            // Properly escape and concatenate the error message in JavaScript
+            $error_message = "Error: " . $sql . "\\n" . $conn->error;
+            echo "<script>alert('{$error_message}');</script>";
+        }
+    }
+}
+
+$conn->close();
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +45,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Navbar</title>
     <link rel="stylesheet" href="./css/main1.css" />  
-    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/contact1.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <script>
+        function showAlert(message, type) {
+            alert(message);
+        }
+    </script>
 </head>
 <body>
     <nav class="navbar">
@@ -25,38 +70,59 @@
         </div>
     </nav>
     <main>
+        <section id="head-image">
+            <div class="text-overlay">
+                <h1>Contact Me</h1>
+            </div>
+            <img src="img/header.jpg" alt="Header">
+        </section>
+
         <section class="contact-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-left">
-                        <h2>Get in Touch</h2>
-                        <form action="process_form.php" method="post">
-                            <textarea placeholder="Enter Message"></textarea>
-                            <input type="text" placeholder="Enter your name">
-                            <input type="email" placeholder="Email">
-                            <input type="text" placeholder="Enter Subject">
-                            <button type="submit">SEND</button>
-                        </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-left">
+                <h2>Get in Touch</h2>
+                <form action="contact.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="phone" placeholder="Phone Number" required>
+                    <input type="text" name="title" placeholder="Title" required>
+                    <textarea name="message" placeholder="Enter your message" required></textarea>
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+            <div class="col-right">
+                <h2>Contact Information</h2>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="icon-home"></i>
+                        <div class="info-text">
+                            <h3>&#127968;Address</h3>
+                            <p>Buttonwood, California.<br>Rosemead, CA 91770</p>
+                        </div>
                     </div>
-                    <div class="col-right">
-                        <div class="contact-info">
-                            <div class="info-item">
-                                <i class="icon-home"></i>
-                                <p>Buttonwood, California.<br>Rosemead, CA 91770</p>
-                            </div>
-                            <div class="info-item">
-                                <i class="icon-phone"></i>
-                                <p>+1 253 565 2365<br>Mon to Fri 9am to 6pm</p>
-                            </div>
-                            <div class="info-item">
-                                <i class="icon-email"></i>
-                                <p>support@colorlib.com<br>Send us your query anytime!</p>
-                            </div>
+                    <div class="info-item">
+                        <i class="icon-phone"></i>
+                        <div class="info-text">
+                            <h3>&#128222;Phone</h3>
+                            <p>+1 253 565 2365<br>Mon to Fri 9am to 6pm</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="icon-email"></i>
+                        <div class="info-text">
+                            <h3>&#128231;Email</h3>
+                            <p>support@colorlib.com<br>Send us your query anytime!</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
+
+
     </main>
     <footer class="footer">
         <div class="footer-content">

@@ -53,7 +53,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
                         <th>Phone</th>
                         <th>Title</th>
                         <th>Message</th>
-                        <th>Package</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -66,7 +65,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
                             echo "<td>" . $row['phone'] . "</td>";
                             echo "<td>" . $row['title'] . "</td>";
                             echo "<td>" . $row['message'] . "</td>";
-                            echo "<td>" . $row['package'] . "</td>";
                             echo "</tr>";
                         }
                     } else {

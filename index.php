@@ -46,7 +46,7 @@ $result = $conn->query($sql);
             <div class="text-overlay">
                 <h1>I'm Ready to Exceed Expectations</h1>
                 <p>Great photography is about depth of feeling, not depth of field.</p>
-                <button class="contact-me-btn" onclick="location.href='contact.html'">Contact Me</button>
+                <button class="contact-me-btn" onclick="location.href='contact.php'">Contact Me</button>
             </div>
             <img src="img/header.jpg" alt="Header">
         </section>        
@@ -73,7 +73,7 @@ $result = $conn->query($sql);
                 ?>
             </div>
             <div class="gallery-button">
-                <a href="portfolio.html"><button>More Images</button></a>
+                <a href="portfolio.php"><button>More Images</button></a>
             </div>
         </section>
 
@@ -111,7 +111,7 @@ $result = $conn->query($sql);
                             <li>Free Consultation</li>
                         </ul>
                     </div>
-                    <a href="contact.html" class="btn">Get Started</a>
+                    <a href="contact.php" class="btn">Get Started</a>
                 </div>
                 <div class="pricing-card">
                     <div class="card-content">
@@ -125,7 +125,7 @@ $result = $conn->query($sql);
                             <li>1 Photo Album</li>
                         </ul>
                     </div>
-                    <a href="contact.html" class="btn"  >Get Started</a>
+                    <a href="contact.php" class="btn"  >Get Started</a>
                 </div>
                 <div class="pricing-card">
                     <div class="card-content">
@@ -140,7 +140,7 @@ $result = $conn->query($sql);
                             <li>Custom Print Options</li>
                         </ul>
                     </div>
-                    <a href="contact.html" class="btn">Get Started</a>
+                    <a href="contact.php" class="btn">Get Started</a>
                 </div>
             </div>
         </section>

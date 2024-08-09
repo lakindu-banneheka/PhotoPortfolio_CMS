@@ -2,13 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('../img/background.jpg') no-repeat center center fixed;
+    /* background: url('../img/background.jpg') no-repeat center center fixed; */
     background-size: cover;
+
 }
 
 .dashboard-container {
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .sidebar {
@@ -65,6 +66,7 @@ body {
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
+    margin-bottom: 100px;
 }
 
 

@@ -11,6 +11,8 @@ body {
 }
 
 .navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,6 +21,7 @@ body {
     background-color: #333;
     color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 3;
 }
 
 .navbar-brand {
@@ -97,6 +100,10 @@ body {
     }
 }
 
+main {
+    padding-top: 30px;
+}
+
 /* Footer styles */
 
 .footer {
@@ -167,149 +174,3 @@ body {
 }
 
 
-/* Index */
-
-/* General Styles */
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-button:hover {
-    color: #ff6347;
-}
-
-#head-image img {
-    width: 100%;
-    height: auto;
-    max-height: 800px;
-    object-fit: cover;
-}
-
-#home, #about, #pricing, #contact {
-    padding: 30px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.heading {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-#head-image .text-overlay {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    z-index: 2; /* text is above the image */
-}
-
-#head-image .text-overlay h1 {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-#head-image .text-overlay p {
-    font-size: 18px;
-    line-height: 1.6;
-    width: 600px;
-}
-
-#home table {
-    width: 100%;
-    border-spacing: 20px;
-}
-
-#home td {
-    text-align: center;
-}
-
-#home img {
-    width: 100%;
-    height: auto;
-}
-
-#home .heading {
-    font-size: 28px;
-    font-weight: bold;
-}
-
-#about table {
-    width: 100%;
-    border-spacing: 20px;
-}
-
-#about img {
-    width: 100%;
-    height: auto;
-}
-
-#pricing table {
-    width: 100%;
-    border-spacing: 20px;
-    text-align: center;
-}
-
-#pricing fieldset {
-    border: 2px solid #333;
-    border-radius: 5px;
-    padding: 20px;
-}
-
-#pricing p {
-    margin: 10px 0;
-}
-
-#pricing hr {
-    border: 0.5px solid #333;
-}
-
-@media (max-width: 768px) {
-    #head-image .text-overlay h1 {
-        font-size: 32px;
-    }
-
-    #head-image .text-overlay p {
-        font-size: 16px;
-    }
-
-    #home table,
-    #about table,
-    #pricing table {
-        display: block;
-        width: 100%;
-    }
-
-    #home td,
-    #about td,
-    #pricing td {
-        display: block;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    #head-image img {
-        max-height: none;
-    }
-}

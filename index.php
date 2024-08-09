@@ -31,9 +31,9 @@ $result = $conn->query($sql);
         <ul class="navbar-links">
             <li><a href="index.php">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="portfolio.php">Portfolio</a></li>
             <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.php">Contact</a></li>
         </ul>
         <div class="navbar-toggle" id="navbar-toggle">
             <span class="bar"></span>
@@ -94,8 +94,6 @@ $result = $conn->query($sql);
             </div>
         </section>
 
-
-
         <section id="pricing">
             <div class="pricing-heading">
                 <h2>Choose Your Package</h2>
@@ -153,9 +151,9 @@ $result = $conn->query($sql);
             <ul class="footer-links">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="portfolio.php">Portfolio</a></li>
                 <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul>
             <div class="footer-social">
                 <a href="#"><i class="fab fa-twitter"></i></a>

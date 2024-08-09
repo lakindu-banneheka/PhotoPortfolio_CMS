@@ -1,0 +1,238 @@
+/* Header Image */
+#head-image {
+    position: relative;
+    overflow: hidden;
+}
+
+#head-image img {
+    width: 100%;
+    height: auto;
+    max-height: 40vh;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+#head-image .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: left;
+    z-index: 2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    max-width: 600px;
+}
+
+#head-image .text-overlay h1 {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.2;
+}
+
+#head-image .text-overlay p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    #head-image img {
+        height: 550px;
+    }
+
+    #head-image .text-overlay {
+        left: 5%;
+        max-width: 90%;
+    }
+
+    #head-image .text-overlay h1 {
+        font-size: 40px;
+    }
+
+    #head-image .text-overlay p {
+        font-size: 16px;
+    }
+}
+
+
+/* pricing */
+
+#pricing {
+    padding: 50px;
+    background-color: #f4f4f9; /* Light background to contrast with dark text */
+    text-align: center;
+}
+
+.pricing-heading h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.pricing-heading p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 380px;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Space between cards */
+}
+
+.card-content {
+    flex: 1;
+}
+
+.pricing-card h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pricing-card .price {
+    font-size: 24px;
+    color: #ff6347; /* Accent color for price */
+    margin-bottom: 20px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.pricing-card ul li {
+    margin: 10px 0;
+}
+
+.pricing-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333; /* Accent color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Pushes the button to the bottom of the card */
+}
+
+.pricing-card .btn:hover {
+    background-color: #e55347;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .pricing-table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        max-width: 300px;
+        margin-bottom: 20px;
+        width: 300px;
+    }
+}
+
+
+/* Add-ons Section */
+#add-ons {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.add-ons-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.add-ons-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.add-ons-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-on-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-on-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.add-on-item p {
+    font-size: 18px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .pricing-table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        max-width: 90%;
+    }
+
+    .add-ons-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .add-on-item {
+        width: 100%;
+        max-width: 400px; /* Adjust as needed */
+        text-align: center;
+        border: 1px solid #ddd; /* Optional: Add border to visualize item length */
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #f9f9f9; /* Optional: Background color for better visibility */
+        border-radius: 8px; /* Optional: Rounded corners */
+    }
+}

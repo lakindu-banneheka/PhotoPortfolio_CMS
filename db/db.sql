@@ -19,7 +19,6 @@ CREATE TABLE messages (
     phone VARCHAR(20) NOT NULL,
     title VARCHAR(255) NOT NULL,
     message TEXT NOT NULL,
-    package ENUM('Basic', 'Silver', 'Gold', 'Custom') NOT NULL
 );
 
 CREATE TABLE portfolio (

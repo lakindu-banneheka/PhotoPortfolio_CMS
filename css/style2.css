@@ -1,0 +1,95 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #f7f7f7;
+    padding: 2em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#about-me h1 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+ #about-me img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    margin: 20px;
+    width: calc(45% - 40px);
+    position: relative;
+    display: inline-block;
+}
+
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+    color: white; /* Text color */
+    /* background-color: rgba(0, 0, 0, 0.5); Optional: background color with transparency */
+    padding: 10px; /* Optional: padding around the text */
+    border-radius: 5px; /* Optional: rounded corners */
+    text-align: center; /* Center-align the text */
+    width: 90%; /* Width of the text box */
+    max-width: 100%; /* Ensure it doesn't exceed the image width */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    word-wrap: break-word; /* Allow text to wrap to the next line */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-item h2 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+

@@ -7,7 +7,7 @@
 #head-image img {
     width: 100%;
     height: auto;
-    max-height: 40vh;
+    max-height: 50vh;
     object-fit: cover;
     filter: brightness(70%);
 }

@@ -22,7 +22,7 @@ $result = $conn->query($sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="icon" type="image/x-icon" href="img/logo.png">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main1.css">
     <link rel="stylesheet" href="./css/portfolio.css">
 </head>
 <body>

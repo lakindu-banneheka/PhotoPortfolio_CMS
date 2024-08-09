@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Navbar</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
 </head>
 <body>
     <nav class="navbar">
@@ -23,7 +24,38 @@
         </div>
     </nav>
     <main>
-        test
+        <section class="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-left">
+                        <h2>Get in Touch</h2>
+                        <form action="process_form.php" method="post">
+                            <textarea placeholder="Enter Message"></textarea>
+                            <input type="text" placeholder="Enter your name">
+                            <input type="email" placeholder="Email">
+                            <input type="text" placeholder="Enter Subject">
+                            <button type="submit">SEND</button>
+                        </form>
+                    </div>
+                    <div class="col-right">
+                        <div class="contact-info">
+                            <div class="info-item">
+                                <i class="icon-home"></i>
+                                <p>Buttonwood, California.<br>Rosemead, CA 91770</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="icon-phone"></i>
+                                <p>+1 253 565 2365<br>Mon to Fri 9am to 6pm</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="icon-email"></i>
+                                <p>support@colorlib.com<br>Send us your query anytime!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer-content">

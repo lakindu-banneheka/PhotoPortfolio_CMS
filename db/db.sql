@@ -29,11 +29,4 @@ CREATE TABLE portfolio (
     uploaded_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-CREATE TABLE packages (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    package_name VARCHAR(255) NOT NULL,
-    price DECIMAL(10, 2) NOT NULL,
-    details TEXT NOT NULL
-);
-
 INSERT INTO admin (name, email, phone, username, password) VALUES ('Admin', 'admin@example.com', '1234567890', 'admin', MD5('adminpassword'));

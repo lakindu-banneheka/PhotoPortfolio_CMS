@@ -5,12 +5,21 @@ if (!isset($_SESSION['loggedin'])) {
     exit;
 }
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "dashboard_db";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "dashboard_db";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+// $conn = new mysqli($servername, $username, $password, $dbname);
+
+$servername = "bhtmwcfrbkzg6uviafdf-mysql.services.clever-cloud.com";
+$username = "uihxtrpqjpai4akg";
+$password = "Z3t4BwRQJQQh7cI7i107";
+$dbname = "bhtmwcfrbkzg6uviafdf";
+$port = 3306;
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -33,6 +42,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     } elseif (isset($_POST['delete'])) {
         $id = $_POST['id'];
+
+        $sql = "SELECT image FROM portfolio WHERE id=$id";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            $image_path = $row['image'];
+            
+            // Delete the image file from the folder
+            if (file_exists($image_path)) {
+                unlink($image_path);
+            }
+        }
+
         $sql = "DELETE FROM portfolio WHERE id=$id";
         if ($conn->query($sql) === TRUE) {
             // Redirect to the same page after deletion

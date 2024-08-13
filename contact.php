@@ -1,10 +1,19 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "dashboard_db";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "dashboard_db";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+// $conn = new mysqli($servername, $username, $password, $dbname);
+
+$servername = "bhtmwcfrbkzg6uviafdf-mysql.services.clever-cloud.com";
+$username = "uihxtrpqjpai4akg";
+$password = "Z3t4BwRQJQQh7cI7i107";
+$dbname = "bhtmwcfrbkzg6uviafdf";
+$port = 3306;
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -134,20 +143,12 @@ $conn->close();
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="contact.php">Contact</a></li>
             </ul>
-            <div class="footer-social">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-            </div>
             <div class="footer-copyright">
                 This template is made
-                <i class="fas fa-heart"></i> by team xx
+                <i class="fas fa-heart"></i> by team 33
             </div>
         </div>
     </footer>
-    <!-- Font Awesome for Social Icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    
-    <script src="./js/main.js"></script>
+    <script src="./js/contact.js"></script>
 </body>
 </html>

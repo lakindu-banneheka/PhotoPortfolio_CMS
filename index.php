@@ -1,11 +1,20 @@
 <?php
 // Database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "dashboard_db";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "dashboard_db";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+// $conn = new mysqli($servername, $username, $password, $dbname);
+
+$servername = "bhtmwcfrbkzg6uviafdf-mysql.services.clever-cloud.com";
+$username = "uihxtrpqjpai4akg";
+$password = "Z3t4BwRQJQQh7cI7i107";
+$dbname = "bhtmwcfrbkzg6uviafdf";
+$port = 3306;
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -162,7 +171,7 @@ $result = $conn->query($sql);
             </div>
             <div class="footer-copyright">
                 This template is made
-                <i class="fas fa-heart"></i> by team xx
+                <i class="fas fa-heart"></i> by team 33
             </div>
         </div>
     </footer>

@@ -29,7 +29,7 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
+    <title>Rettro | Home</title>
     <link rel="icon" type="image/x-icon" href="img/logo.png">
     <link rel="stylesheet" href="./css/main1.css">
     <link rel="stylesheet" href="./css/index1.css">
@@ -55,7 +55,8 @@ $result = $conn->query($sql);
             <div class="text-overlay">
                 <h1>I'm Ready to Exceed Expectations</h1>
                 <p>Great photography is about depth of feeling, not depth of field.</p>
-                <button class="contact-me-btn" onclick="location.href='contact.php'">Contact Me</button>
+                <!-- <button class="contact-me-btn" onclick="location.href='contact.php'">Contact Me</button> -->
+                <a href="contact.php"><button  class="contact-me-btn" >Contact Me</button></a>
             </div>
             <img src="img/header.jpg" alt="Header">
         </section>        
@@ -164,11 +165,6 @@ $result = $conn->query($sql);
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="contact.php">Contact</a></li>
             </ul>
-            <div class="footer-social">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-            </div>
             <div class="footer-copyright">
                 This template is made
                 <i class="fas fa-heart"></i> by team 33

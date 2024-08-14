@@ -103,16 +103,12 @@ $result = $conn->query($sql);
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="contact.php">Contact</a></li>
             </ul>
-            <div class="footer-social">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-            </div>
             <div class="footer-copyright">
                 This template is made
                 <i class="fas fa-heart"></i> by team 33
             </div>
         </div>
     </footer>
+    <script src="./js/portfolio.js" ></script>
 </body>
 </html>
